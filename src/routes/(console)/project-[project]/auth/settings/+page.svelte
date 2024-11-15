@@ -44,6 +44,7 @@
 </script>
 
 {#if $authMethods && $project}
+    ${console.log($project.oAuthProviders)}
     <Container>
         <CardGrid>
             <Heading tag="h2" size="7">Auth methods</Heading>

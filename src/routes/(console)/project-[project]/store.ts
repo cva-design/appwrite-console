@@ -1,5 +1,5 @@
 import { page } from '$app/stores';
-import type { Models } from '@appwrite.io/console';
+import type { Models } from '../';
 import type { BarSeriesOption } from 'echarts/charts';
 import { derived, writable } from 'svelte/store';
 
