@@ -39,7 +39,7 @@
             trackError(error, Submit.AuthStatusUpdate);
         }
     }
-
+    console.log($project.oAuthProviders);
     $: authMethods.load($project);
 </script>
 

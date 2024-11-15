@@ -5,7 +5,10 @@ import { derived, writable } from 'svelte/store';
 
 export const project = derived(
     page,
-    ($page) => $page.data.project as Models.Project & { region?: string }
+    ($page) => {
+        console.log('PAGE DATA', $page.data.project);
+        return $page.data.project as Models.Project & { region?: string }
+    }
 );
 export const onboarding = derived(
     project,

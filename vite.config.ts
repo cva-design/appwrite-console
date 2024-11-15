@@ -1,16 +1,16 @@
 import { defineConfig } from 'vitest/config';
 import { sveltekit } from '@sveltejs/kit/vite';
-import { sentrySvelteKit } from '@sentry/sveltekit';
+// import { sentrySvelteKit } from '@sentry/sveltekit';
 
 const config = defineConfig({
     plugins: [
-        sentrySvelteKit({
-            adapter: 'auto',
-            sourceMapsUploadOptions: {
-                org: 'appwrite',
-                project: 'console'
-            }
-        }),
+        // sentrySvelteKit({
+        //     adapter: 'auto',
+        //     sourceMapsUploadOptions: {
+        //         org: 'appwrite',
+        //         project: 'console'
+        //     }
+        // }),
         sveltekit()
     ],
     optimizeDeps: {
